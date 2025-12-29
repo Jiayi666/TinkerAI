@@ -26,7 +26,7 @@ There are a few critical points worth noting
 
 1. There are at least 2 LLM queries when using MCP, where the first query make LLM plan for what MCP to call and the second query make LLM consume the MCP call result
 2. The MCP calls are executed by the *user host*, while the list of MCP tools to call and their parameters are decided in LLM response
-3. Available MCP tools (function definitions) is concatenated with user query, consuming context window
+3. Available MCP tools are provided to LLMs via **[system prompt](https://huggingface.co/learn/agents-course/en/unit1/tools#how-do-we-give-tools-to-an-llm)**, which consumes context window.
 4. To make the AI application able to understand the "MCP list and parameters to call", many new LLMs are trained to use **structured output format** (basically the LLM respond MCP calls with predefined format)
 
 ## MCP Communication
