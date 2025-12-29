@@ -2,7 +2,7 @@
 
 Essentially, as of 12/2025, all LLMs, whether it is in the GPT family or LLaMa family or more, are sharing the same set of core concepts, which are 
 
-1. **Transformer** : It's the overall neural network architecture made up of stacked layers. Each transformer layer contains an attention mechanism plus a feed-forward network. When people say "GPT-3 has 96 layers," they mean 96 transformer blocks stacked on top of each other.
+1. **Transformer architecture** : It's the overall neural network architecture made up of stacked layers. Each transformer layer contains an attention mechanism plus a feed-forward network. When people say "GPT-3 has 96 layers," they mean 96 transformer blocks stacked on top of each other.
 2. **Attention mechanism** : Inside each transformer layer, the attention mechanism is what actually processes the relationships between tokens. It takes the input tokens and computes which tokens should "pay attention" to which other tokens. This is where the model learns context and meaning.
 3. **Key-Value cache** : The KV cache stores these matrices so you don't recompute them for every new token. It's not part of the model architecture itself, but rather a clever implementation detail for making inference faster and is pretty much applied to all LLMs.
 
